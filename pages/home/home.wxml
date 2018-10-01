@@ -1,0 +1,122 @@
+<view class="page-home">
+    <view class="address-bar">
+        <view class="select-address" >
+            <image class="address-icon" src="https://img30.360buyimg.com/mweb/jfs/t21268/32/1953343752/3000/d1cb98db/5b3f0126N4b478afb.png"></image>
+            <view class="address-name">陕西省西安市</view>
+        </view>
+        <image class="location-icon" bindtap='getLocation' src="https://img30.360buyimg.com/mweb/jfs/t24040/246/1084733028/2630/1b8c884f/5b508e17Ne7c0e40b.png" />
+    </view>
+    <view class="search-box flex">
+        <view class="input-box">
+            <image class="search-icon" src="https://img30.360buyimg.com/mweb/jfs/t24697/66/1466178717/2183/b5a292c1/5bb19ae5N3dc06cdc.png" />
+            <input class="search-input" placeholder-class="input-placeholder" placeholder="搜索" />
+            <view hidden="true" class="clean-box">
+                <image class="clean-icon" src="https://img30.360buyimg.com/mweb/jfs/t22615/231/1007092323/3255/5f40909d/5b4ca186N50192e86.png" />
+            </view>
+        </view>
+        <text
+            hidden="true"
+            class="cancel primary-color">取消</text>
+    </view>
+    <view class="swiper-bar">
+        <swiper
+            class="swiper"
+            circular="true"
+            interval="5000"
+            duration="1000"
+            autoplay="true" >
+            <swiper-item
+                wx:for="{{imgs}}"
+                wx:for-index="index"
+                wx:key="{{index}}">
+                <view class="sitem flex">
+                    <image class="slide-image" src="{{item.imgUrl}}"/>
+                    <view class="sright pl20 flex-vertical-left flex-start-between">
+                        <view wx:if="{{item.title}}" class="s1">{{item.title}}</view>
+                        <view class="s2 flex-vertical-left">{{item.content}}</view>
+                        <view class="s3">{{item.desc}}</view>
+                    </view>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="nav-bar">
+        <view class="nav-item" wx:for="{{navs}}"
+            wx:for-item="navItem"
+            wx:key="{{index}}"
+            wx:for-index="index"
+            data-type="{{navItem.jumpType}}"
+            data-link="{{navItem.linkUrl}}" >
+            <view class="nav-img">
+                <image src="{{navItem.imgUrl}}" />
+            </view>
+            <view class="nav-cat">{{navItem.title}}</view>
+        </view>
+    </view>
+    <view class="marquee flex">
+        <view class="fb">快报专区</view>
+        <swiper
+            class="swiper"
+            circular="true"
+            interval="3000"
+            duration="1000"
+            vertical="true"
+            autoplay="true" >
+            <swiper-item catchtouchmove="marqueeTouch">
+                <view class="mrow">我是小虾米刚刚评价了胡少军老师</view>
+            </swiper-item>
+            <swiper-item catchtouchmove="marqueeTouch">
+                <view class="mrow">胡少军老师的人气为何这么高</view>
+            </swiper-item>
+            <swiper-item catchtouchmove="marqueeTouch">
+                <view class="mrow">从哪些方面能够快速选择研究生导师</view>
+            </swiper-item>
+        </swiper>
+        <text class="mm">|</text>
+        <text>更多</text>
+    </view>
+    <view class="habit-box">
+        <view class="ht pl20 pr20">热门评价</view>
+        <view class="hc pl20">
+            <view
+                wx:for="{{habits}}"
+                wx:key="{{index}}"
+                class="hrow flex pb20">
+                <image src="{{item.imgUrl}}" />
+                <view class="hrc flex pr20 pb20">
+                    <view class="hrct flex-vertical-left flex-start-between">
+                        <view class="s2 flex-vertical-left">{{item.name}}</view>
+                        <view class="s3">{{item.commons}}</view>
+                    </view>
+                    <view class="s4">
+                        <view>{{item.acnt}} 关注</view>
+                        <view>{{item.ccnt}} 评价</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="habit-box">
+        <view class="ht pl20 pr20">猜你感兴趣</view>
+        <view class="hc pl20">
+            <view
+                wx:for="{{interests}}"
+                wx:key="{{index}}"
+                class="sitem flex pb20">
+                <image class="slide-image" src="{{item.imgUrl}}" />
+                <view class="hrc flex pr20 pb20">
+                    <view class="sright flex-vertical-left flex-start-between">
+                        <view class="s2 flex-vertical-left">{{item.name}}</view>
+                        <view class="s3">{{item.school}}</view>
+                    </view>
+                    <view
+                        class="at"
+                        wx:if="{{index%2==0}}">+ 关注</view>
+                    <view
+                        wx:else
+                        class="at collected">已关注</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
