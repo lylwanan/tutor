@@ -77,5 +77,18 @@ Page({
             },
             fail: function () {}
         })
+    },
+    onShareAppMessage: function(){
+        let me = this;
+        return {
+            title: '测试Foo',
+            path: '/pages/home/home',
+            success: function (res) {
+                // 转发成功
+            },
+            fail: function (res) {
+                // 转发失败
+            }
+        }
     }
 });

@@ -84,7 +84,7 @@
                 class="hrow flex pb20">
                 <image src="{{item.imgUrl}}" />
                 <view class="hrc flex pr20 pb20">
-                    <view class="hrct flex-vertical-left flex-start-between">
+                    <view class="hrct flex-vertical-left flex-start-between pr20">
                         <view class="s2 flex-vertical-left">{{item.name}}</view>
                         <view class="s3">{{item.commons}}</view>
                     </view>
