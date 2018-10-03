@@ -1,0 +1,74 @@
+@import '../../styles/common.wxss';
+
+.page-mine {
+    color: #333;
+    font-size: 28rpx;
+}
+.flex1 {
+    flex: 1;
+}
+.user-box {
+    width: 690rpx;
+    margin: 0 auto;
+    padding: 0 10rpx;
+    border-radius: 12rpx;
+    border-bottom: 1px solid #EEE;
+}
+.uname {
+    font-size: 40rpx;
+    font-weight: 500;
+    margin-bottom: 10rpx;
+}
+.udesc {
+    color: #666;
+}
+.uimg {
+    width: 110rpx;
+    height: 110rpx;
+    border-radius: 50%;
+}
+.desc {
+    color: #999;
+    font-size: 26rpx;
+}
+.data-item {
+    flex: 1;
+    margin: 40rpx 0;
+    text-align: center;
+}
+.br {
+    border-right: 1px solid #EEE;
+}
+.more {
+    width: 30rpx;
+    height: 30rpx;
+    margin-left: 20rpx;
+}
+.d1 {
+    font-size: 40rpx;
+    font-weight: bold;
+}
+.d2 {
+    color: #999;
+    font-size: 26rpx;
+    margin-top: 10rpx;
+}
+.deal-box {
+    padding-left: 30rpx;
+    border-top: 15rpx solid #EEE;
+}
+.row {
+    height: 100rpx;
+    color: #666;
+    padding-right: 40rpx;
+    border-bottom: 1px solid #EEE;
+}
+.r1 {
+    width: 35rpx;
+    height: 35rpx;
+}
+.row .more {
+    width: 30rpx;
+    height: 30rpx;
+    vertical-align: middle;
+}

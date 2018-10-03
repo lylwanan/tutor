@@ -129,6 +129,26 @@
     padding-bottom: 20rpx;
 }
 
+.m20 {
+    margin: 20rpx;
+}
+
+.ml20 {
+    margin-left: 20rpx;
+}
+
+.mr20 {
+    margin-right: 20rpx;
+}
+
+.mt20 {
+    margin-top: 20rpx;
+}
+
+.mb20 {
+    margin-bottom: 20rpx;
+}
+
 .fb {
     font-weight: bold;
 }

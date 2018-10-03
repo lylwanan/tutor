@@ -18,28 +18,6 @@
             hidden="true"
             class="cancel primary-color">取消</text>
     </view>
-    <view class="swiper-bar">
-        <swiper
-            class="swiper"
-            circular="true"
-            interval="5000"
-            duration="1000"
-            autoplay="true" >
-            <swiper-item
-                wx:for="{{imgs}}"
-                wx:for-index="index"
-                wx:key="{{index}}">
-                <view class="sitem flex">
-                    <image class="slide-image" src="{{item.imgUrl}}"/>
-                    <view class="sright pl20 flex-vertical-left flex-start-between">
-                        <view wx:if="{{item.title}}" class="s1">{{item.title}}</view>
-                        <view class="s2 flex-vertical-left">{{item.content}}</view>
-                        <view class="s3">{{item.desc}}</view>
-                    </view>
-                </view>
-            </swiper-item>
-        </swiper>
-    </view>
     <view class="nav-bar">
         <view class="nav-item" wx:for="{{navs}}"
             wx:for-item="navItem"
@@ -75,6 +53,28 @@
         <text class="mm">|</text>
         <text>更多</text>
     </view>
+    <view class="swiper-bar">
+        <swiper
+            class="swiper"
+            circular="true"
+            interval="5000"
+            duration="1000"
+            autoplay="true" >
+            <swiper-item
+                wx:for="{{imgs}}"
+                wx:for-index="index"
+                wx:key="{{index}}">
+                <view class="sitem flex">
+                    <image class="slide-image" src="{{item.imgUrl}}"/>
+                    <view class="sright pl20 flex-vertical-left flex-start-between">
+                        <view wx:if="{{item.title}}" class="s1">{{item.title}}</view>
+                        <view class="s2 flex-vertical-left">{{item.content}}</view>
+                        <view class="s3">{{item.desc}}</view>
+                    </view>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
     <view class="habit-box">
         <view class="ht pl20 pr20">热门评价</view>
         <view class="hc pl20">
@@ -104,10 +104,11 @@
                 wx:key="{{index}}"
                 class="sitem flex pb20">
                 <image class="slide-image" src="{{item.imgUrl}}" />
-                <view class="hrc flex pr20 pb20">
+                <view class="hrc flex pr20">
                     <view class="sright flex-vertical-left flex-start-between">
                         <view class="s2 flex-vertical-left">{{item.name}}</view>
                         <view class="s3">{{item.school}}</view>
+                        <view class="s5">100关注 99评论</view>
                     </view>
                     <view
                         class="at"

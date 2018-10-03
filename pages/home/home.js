@@ -5,8 +5,9 @@ Page({
         imgs: [{
             linkUrl: '',
             jumpType: '',
+            title: '陕西·杨凌',
             content: '西北农林科技大学',
-            desc: '100位教师参与评价',
+            desc: '99教师 999评价',
             imgUrl: 'https://m.360buyimg.com/mobilecms/s1125x690_jfs/t27859/211/376554744/162106/9e380d6d/5bb07e87N90150d82.jpg!cr_1125x549_0_72!q70.jpg.dpg'
         }, {
             linkUrl: '',
@@ -31,6 +32,16 @@ Page({
             jumpType: '',
             title: '研究方向',
             imgUrl: 'https://img30.360buyimg.com/mweb/jfs/t25822/14/1468351251/7700/e2b0bd0e/5bb1f10bN0fa7d2bd.jpg'
+        }, {
+            linkUrl: '',
+            jumpType: '',
+            title: '专业',
+            imgUrl: 'https://img30.360buyimg.com/mweb/jfs/t27211/265/576890382/8047/3f1cacdb/5bb1f0ecN680e79c8.jpg'
+        }, {
+            linkUrl: '',
+            jumpType: '',
+            title: '学校',
+            imgUrl: 'https://img30.360buyimg.com/mweb/jfs/t26935/254/572903564/8597/fae70189/5bb1f0dbNccda0a14.jpg'
         }],
         habits: [{
             name: '吴磊',

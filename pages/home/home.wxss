@@ -46,7 +46,7 @@
     flex: 1;
     align-items: center;
     height: 72rpx;
-    border-radius: 4rpx;
+    border-radius: 6rpx;
     padding: 0 10rpx;
     background-color: #F5F5F5;
 }
@@ -87,6 +87,7 @@
 .swiper-bar {
     height: 120rpx;
     margin: 0 20rpx;
+    margin-top: 20rpx;
     overflow: hidden;
 }
 .swiper {
@@ -126,7 +127,12 @@
     width: 120rpx;
     text-align: center;
     padding-left: 20rpx;
-    border-left: 1px solid #F5F5F5;
+    border-left: 1px solid #EEE;
+}
+.s5 {
+    width: 100%;
+    color: #CCC;
+    font-size: 24rpx;
 }
 .nav-bar {
     display: flex;
@@ -171,7 +177,7 @@
     font-size: 28rpx;
     color: #333;
     border-radius: 15rpx;
-    border: 1px solid #F5F5F5;
+    border: 1px solid #EEE;
 }
 .marquee swiper {
     flex: 1;
@@ -214,14 +220,14 @@
     margin-bottom: 10rpx;
 }
 .hrow .hrc {
-    border-bottom: 1px solid #F5F5F5;
+    border-bottom: 1px solid #EEE;
 }
 .at {
-    font-size: 26rpx;
-    margin-right: 20rpx;
+    font-size: 24rpx;
+    margin-left: 20rpx;
     border-radius: 10rpx;
     padding: 8rpx 20rpx;
-    border: 1px solid #F5F5F5;
+    border: 1px solid #EEE;
 }
 .collected {
     color: #FFF;
