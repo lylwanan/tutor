@@ -1,0 +1,181 @@
+@import '../../styles/common.wxss';
+
+.page-teacher {
+    color: #333;
+    font-size: 28rpx;
+}
+.hr {
+    border-top: 15rpx solid #F5F5F5;
+}
+.bg-box {
+    position: relative;
+    height: 350rpx;
+    overflow: hidden;
+    background: #CDE5FC;
+    border-bottom: 1px solid #EEE;
+}
+.circle1 {
+    position: absolute;
+    left: -100rpx;
+    bottom: -200rpx;
+    width: 500rpx;
+    height: 500rpx;
+    background: #DEEEFD;
+    border-radius: 50%;
+}
+.circle2 {
+    position: absolute;
+    right: -200rpx;
+    bottom: 0;
+    width: 350rpx;
+    height: 350rpx;
+    background: #E3F1FE;
+    border-radius: 50%;
+}
+.uimg {
+   position: absolute;
+   top: -100rpx;
+   left: 50%;
+   width: 200rpx;
+   height: 200rpx;
+   border-radius: 50%;
+   transform: translateX(-50%);
+}
+.info-box {
+    position: relative;
+    margin: 0 15rpx;
+    top: -150rpx;
+    padding: 20rpx;
+    padding-top: 0;
+    background: #FFF;
+    border-radius: 15rpx;
+    border: 1px solid #EEE;
+    box-shadow: 0 0 10rpx 0 #EEE;
+}
+.uname {
+    margin-top: 120rpx;
+    text-align: center;
+    font-size: 40rpx;
+}
+.uname > text {
+    vertical-align: middle;
+}
+.base-info {
+    color: #999;
+    margin-top: 10rpx;
+    text-align: center;
+}
+.ucount {
+    color: #999;
+    margin-top: 20rpx;
+    padding-top: 20rpx;
+    border-top: 1px solid #EEE;
+}
+.ucount > .flex-all {
+    text-align: center;
+}
+.sqt {
+    color: #EEE;
+}
+.number {
+    color: #333;
+    font-weight: 500;
+    font-size: 30rpx;
+    margin-left: 10rpx;
+}
+.content-box {
+    margin-top: -150rpx;
+}
+.nav-bar {
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.bar-item {
+    color: #999;
+    font-weight: 500;
+    position: relative;
+    margin: 0 20rpx;
+}
+.active-bar {
+    color: #333;
+}
+.active-bar::after {
+    position: absolute;
+    bottom: 8rpx;
+    left: 50%;
+    content: "";
+    display: block;
+    width: 80%;
+    height: 5rpx;
+    border-radius: 5rpx;
+    background: #3284F6;
+    transform: translateX(-50%);
+}
+.description {
+    text-indent: 2em;
+}
+.rate .left {
+    font-size: 80rpx;
+    font-weight: 500;
+}
+.rate .right .iconfont {
+    font-size: 40rpx;
+    color: #F4AE4B;
+}
+.rate-num {
+    margin-top: 5rpx;
+}
+.rate .row-name {
+    width: 100rpx;
+}
+.rate .progress {
+    margin-right: 20rpx;
+    display: inline-block;
+    height: 20rpx;
+    background: #F4AE4B;
+}
+.com-user-img {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+}
+.com-user-name {
+    margin-bottom: 5rpx;
+}
+.com-time {
+    color: #999;
+    font-size: 24rpx;
+}
+.com-count {
+    padding: 15rpx 0;
+    margin-top: 20rpx;
+    text-align: right;
+    border-top: 1px solid #F5F5F5;
+}
+.com-count .iconfont {
+    font-size: 40rpx;
+    vertical-align: middle;
+}
+.com-count > view {
+    display: inline-block;
+    margin: 0 40rpx;
+}
+.count-tip {
+    font-size: 30rpx;
+    margin-left: 10rpx;
+    vertical-align: middle;
+}
+.write-box {
+    position: fixed;
+    width: 90rpx;
+    height: 90rpx;
+    right: 50rpx;
+    bottom: 100rpx;
+    border-radius: 50%;
+    font-size: 70rpx;
+    color: #3284F6;
+    background: #FFF;
+    text-align: center;
+    line-height: 90rpx;
+    border: 1px solid #EEE;
+}

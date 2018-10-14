@@ -63,10 +63,6 @@
     padding-right: 40rpx;
     border-bottom: 1px solid #EEE;
 }
-.r1 {
-    width: 35rpx;
-    height: 35rpx;
-}
 .row .more {
     width: 30rpx;
     height: 30rpx;

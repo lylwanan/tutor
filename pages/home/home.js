@@ -89,6 +89,18 @@ Page({
             fail: function () {}
         })
     },
+    // 热门评论跳转
+    handleHotItem: function () {
+        wx.navigateTo({
+            url: '/pages/teacher/teacher'
+        });
+    },
+    // 猜你感兴趣跳转
+    handleLikeItem: function () {
+        wx.navigateTo({
+            url: '/pages/teacher/teacher'
+        });
+    },
     onShareAppMessage: function(){
         let me = this;
         return {

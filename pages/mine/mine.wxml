@@ -17,27 +17,34 @@
                     <view class="primary-color d1">100</view>
                     <view class="d2">参与评论</view>
                 </view>
-                <image class="more" src="https://img30.360buyimg.com/mweb/jfs/t27541/304/652491886/739/ff0714a3/5bb4c203N39756752.png" />
+                <text class="iconfont icon-arrow-right more" style="color:#999"></text>
             </view>
-            <view class="data-item flex flex-center">
+            <view class="data-item flex flex-center br">
                 <view>
                     <view class="primary-color d1">99</view>
                     <view class="d2">我的关注</view>
                 </view>
-                <image class="more" src="https://img30.360buyimg.com/mweb/jfs/t27541/304/652491886/739/ff0714a3/5bb4c203N39756752.png" />
+                <text class="iconfont icon-arrow-right more" style="color:#999"></text>
+            </view>
+            <view class="data-item flex flex-center">
+                <view>
+                    <view class="primary-color d1">5</view>
+                    <view class="d2">我的消息</view>
+                </view>
+                <text class="iconfont icon-arrow-right more" style="color:#999"></text>
             </view>
         </view>
     </view>
     <view class="deal-box">
         <view class="row flex">
-            <image class="r1 mr20" src="https://img30.360buyimg.com/mweb/jfs/t27088/150/650528747/5952/4cbfafc4/5bb4ccc5N692da63d.png" />
+            <text class="iconfont icon-edit mr20" style="color: #F7C652"></text>
             <view class="flex1">意见反馈</view>
-            <image class="more" src="https://img30.360buyimg.com/mweb/jfs/t27541/304/652491886/739/ff0714a3/5bb4c203N39756752.png" />
+            <text class="iconfont icon-arrow-right more" style="color:#999"></text>
         </view>
         <view class="row flex">
-            <image class="r1 mr20" src="https://img30.360buyimg.com/mweb/jfs/t27817/175/681147481/7372/ed8852f5/5bb4cbcdN3300f6fc.png" />
+            <text class="iconfont icon-comments mr20" style="color:#51a938"></text>
             <view class="flex1">关于我们</view>
-            <image class="more" src="https://img30.360buyimg.com/mweb/jfs/t27541/304/652491886/739/ff0714a3/5bb4c203N39756752.png" />
+            <text class="iconfont icon-arrow-right more" style="color:#999"></text>
         </view>
     </view>
 </view>

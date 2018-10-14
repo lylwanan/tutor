@@ -81,7 +81,8 @@
             <view
                 wx:for="{{habits}}"
                 wx:key="{{index}}"
-                class="hrow flex pb20">
+                class="hrow flex pb20"
+                bindtap="handleHotItem">
                 <image src="{{item.imgUrl}}" />
                 <view class="hrc flex pr20 pb20">
                     <view class="hrct flex-vertical-left flex-start-between pr20">
@@ -102,7 +103,8 @@
             <view
                 wx:for="{{interests}}"
                 wx:key="{{index}}"
-                class="sitem flex pb20">
+                class="sitem flex pb20"
+                bindtap="handleLikeItem">
                 <image class="slide-image" src="{{item.imgUrl}}" />
                 <view class="hrc flex pr20">
                     <view class="sright flex-vertical-left flex-start-between">

@@ -1,3 +1,5 @@
+@import './iconfont.wxss';
+
 .primary-color {
     color: #3284f6;
 }
@@ -107,6 +109,10 @@
 .flex-shrink {
 	flex-shrink: 0;
     -webkit-flex-shrink: 0;
+}
+
+.flex-all {
+    flex: 1;
 }
 
 .p20 {

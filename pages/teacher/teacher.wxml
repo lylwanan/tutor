@@ -1,0 +1,128 @@
+<view class="page-teacher">
+    <view class="bg-box">
+        <view class="circle1"></view>
+        <view class="circle2"></view>
+    </view>
+    <view class="info-box">
+        <image class="uimg" src="https://img30.360buyimg.com/mweb/jfs/t26704/362/589340410/113311/c5fda78b/5bb1e2e2N0acdff4b.jpg" />
+        <view class="uname fb">
+            <text>吴磊</text>
+            <text style="color:#59c0e8" class="iconfont icon-male ml20"></text>
+            <!--<text style="color:#ed6a93" class="iconfont icon-venus ml20"></text>-->
+        </view>
+        <view class="base-info">西北农林科技大学</view>
+        <view class="base-info">
+            <text class="mr20">陕西·西安人</text>
+            <text>硕士研究生导师</text>
+        </view>
+        <view class="ucount flex">
+            <view class="flex-all br">关注<text class="number">100</text></view>
+            <view class="sqt">|</view>
+            <view class="flex-all">评价<text class="number">100</text></view>
+        </view>
+    </view>
+    <view class="content-box">
+        <view class="nav-bar flex flex-center">
+            <view
+                data-key="0"
+                bindtap="handleBarClick"
+                class="bar-item{{active==0?' active-bar':''}}">简介</view>
+            <view
+                data-key="1"
+                bindtap="handleBarClick"
+                class="bar-item{{active==1?' active-bar':''}}">评分</view>
+            <view
+                data-key="2"
+                bindtap="handleBarClick"
+                class="bar-item{{active==2?' active-bar':''}}">评价</view>
+        </view>
+        <view>
+            <view
+                class="description hr p20"
+                hidden="{{active!=0}}" >1999年12月26日出生于上海，中国内地影视男演员。2005年，因出演个人首部作品《封神榜之凤鸣岐山》而踏入演艺圈。2009年，因出演喜剧《家有外星人》中唐不苦一角而被观众认识。2015年，凭借古装谋权剧《琅琊榜》获得国剧盛典最具潜质演员奖。2016年，主演3D喜剧《大闹东海》及奇幻片《阿修罗》。2017年，主演改编自天蚕土豆同名小说的古装玄幻剧《斗破苍穹》；同年，他还主演了探险题材剧《沙海》。</view>
+            <view
+                class="rate hr p20"
+                hidden="{{active!=1}}" >
+                <view class="head flex flex-center">
+                    <text class="left">8.0</text>
+                    <view class="right flex-all ml20">
+                        <view>
+                            <text class="iconfont icon-collection-fill"></text>
+                            <text class="iconfont icon-collection-fill"></text>
+                            <text class="iconfont icon-collection-fill"></text>
+                            <text class="iconfont icon-collection"></text>
+                            <text class="iconfont icon-collection"></text>
+                        </view>
+                        <view>100人参与评价</view>
+                    </view>
+                </view>
+                <view class="content mt20">
+                    <view class="row flex flex-start">
+                        <view class="row-name">学术</view>
+                        <view class="flex-all">
+                            <view
+                            style="width:{{4*80}}rpx"
+                            class="progress"></view>
+                            <text>8.0</text>
+                        </view>
+                    </view>
+                    <view class="row flex flex-start">
+                        <view class="row-name">管理</view>
+                        <view class="flex-all">
+                            <view
+                            style="width:{{4*20}}rpx"
+                            class="progress"></view>
+                            <text>2.0</text>
+                        </view>
+                    </view>
+                    <view class="row flex flex-start">
+                        <view class="row-name">威望</view>
+                        <view class="flex-all">
+                            <view
+                            style="width:{{4*60}}rpx"
+                            class="progress"></view>
+                            <text>6.0</text>
+                        </view>
+                    </view>
+                    <view class="row flex flex-start">
+                        <view class="row-name">亲和度</view>
+                        <view class="flex-all">
+                            <view
+                            style="width:{{4*100}}rpx"
+                            class="progress"></view>
+                            <text>10.0</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view
+                class="comment"
+                hidden="{{active!=2}}" >
+                <text class="iconfont icon-brush-fill write-box"></text>
+                <view
+                    wx:for="commons"
+                    wx:key="{{index}}"
+                    class="hr p20">
+                    <view class="com-head flex flex-left">
+                        <image class="com-user-img" src="https://img30.360buyimg.com/mweb/jfs/t26704/362/589340410/113311/c5fda78b/5bb1e2e2N0acdff4b.jpg" />
+                        <view class="ml20 flex-vertical-left">
+                            <view class="com-user-name">张三</view>
+                            <view class="com-time">2018-10-12 13:14</view>
+                        </view>
+                    </view>
+                    <view class="com-content mt20">1999年12月26日出生于上海，中国内地影视男演员。2005年，因出演个人首部作品《封神榜之凤鸣岐山》而踏入演艺圈。2009年，因出演喜剧《家有外星人》中唐不苦一角而被观众认识。2015年，凭借古装谋权剧《琅琊榜》获得国剧盛典最具潜质演员奖。2016年，主演3D喜剧《大闹东海》及奇幻片《阿修罗》。2017年，主演改编自天蚕土豆同名小说的古装玄幻剧《斗破苍穹》；同年，他还主演了探险题材剧《沙海》。</view>
+                    <view class="com-count">
+                        <view>
+                            <text class="iconfont icon-message"></text>
+                            <text class="count-tip">20</text>
+                        </view>
+                        <view>
+                            <text class="iconfont icon-praise"></text>
+                            <text class="count-tip">20</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
