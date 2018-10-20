@@ -1,0 +1,26 @@
+@import '../../styles/common.wxss';
+
+.left-image {
+    width: 100rpx;
+    height: 100rpx;
+    margin-left: 50rpx;
+    margin-right: 20rpx;
+    vertical-align: middle;
+}
+.rate .right {
+    font-size: 30rpx;
+    align-self: flex-start;
+}
+.rate .right .iconfont {
+    font-size: 40rpx;
+    color: #F4AE4B;
+}
+.commont {
+    height: 250rpx;
+    background: #F5F5F5;
+}
+.commont textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 28rpx;
+}

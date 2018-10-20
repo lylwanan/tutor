@@ -1,0 +1,22 @@
+<view class="page-evaluation">
+    <view class="rate p20" >
+        <view class="flex flex-center">
+            <view>
+                <image class="left-image" src="https://img30.360buyimg.com/mweb/jfs/t26704/362/589340410/113311/c5fda78b/5bb1e2e2N0acdff4b.jpg" />
+            </view>
+            <view class="right flex-all ml20">
+                <view>综合评分</view>
+                <view>
+                    <text class="iconfont icon-collection-fill"></text>
+                    <text class="iconfont icon-collection-fill"></text>
+                    <text class="iconfont icon-collection-fill"></text>
+                    <text class="iconfont icon-collection"></text>
+                    <text class="iconfont icon-collection"></text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="commont mt20 p20">
+        <textarea placeholder="请在此认真填写评价"></textarea>
+    </view>
+</view>

@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/mine/mine",
-    "pages/teacher/teacher"
+    "pages/evaluation/evaluation",
+    "pages/teacher/teacher",
+    "pages/mine/mine"
   ],
   "tabBar": {
     "color": "#999",
